@@ -28,11 +28,14 @@ Both at once: `npx skills add B1aZer/skills`
 
 ## Without installing anything
 
-`skills use` prints a skill as a prompt and writes nothing to your repo, so you
-can pipe it straight into an agent or read it before you commit to either one:
+`skills use -a <agent>` starts your agent with the skill already loaded and
+writes nothing to your repo:
 
 ```bash
-npx skills use B1aZer/skills@staysup-enquiry
+npx skills use B1aZer/skills@staysup-enquiry -a claude-code
 ```
+
+`-a` takes `claude-code`, `codex` or `sarvam-code`. Drop it and the skill is
+printed as a prompt instead, which you can pipe wherever you like.
 
 Built by [Stays Up](https://staysup.io).

@@ -26,4 +26,13 @@ npx skills add B1aZer/skills -s silent-failure-check
 
 Both at once: `npx skills add B1aZer/skills`
 
+## Without installing anything
+
+`skills use` prints a skill as a prompt and writes nothing to your repo, so you
+can pipe it straight into an agent or read it before you commit to either one:
+
+```bash
+npx skills use B1aZer/skills@staysup-enquiry
+```
+
 Built by [Stays Up](https://staysup.io).
